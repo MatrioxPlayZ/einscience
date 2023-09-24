@@ -7,7 +7,6 @@ const HeroComponent = () => {
             <nav className={'navbar'}>
                 <img src={Image} className={'navImage'} alt="logo"/>
             </nav>
-
             <CategoriesComponent/>
         </>
     )

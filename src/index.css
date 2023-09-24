@@ -39,3 +39,6 @@
     border-radius: 10px;
     border: 0 dotted #000000;
 }
+body {
+    opacity: 0;
+}
