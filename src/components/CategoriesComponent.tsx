@@ -13,14 +13,16 @@ const CategoriesComponent = () => {
 
 
     const handleHover = (e: any) => {
-        gsap.to(e.currentTarget.children[1], {duration: 0.1, opacity: 0.01, ease: 'ease-out'})
-        gsap.to(e.currentTarget.children[0], {duration: 0.1, opacity: 0.01, ease: 'ease-out'})
-        gsap.to(e.currentTarget.children[2], {duration: 0.1, opacity: 1, ease: 'ease-out'})
+        gsap.to(e.currentTarget, {duration: 0.2, scale: 1.1, ease: 'ease-out'})
+        gsap.to(e.currentTarget.children[0], {duration: 0.2, opacity: 0, ease: 'ease-out'})
+        gsap.to(e.currentTarget.children[1], {duration: 0.2, opacity: 0, ease: 'ease-out'})
+        gsap.to(e.currentTarget.children[2], {duration: 0.2, opacity: 1, ease: 'ease-out'})
 
     }
     const handleLeave = (e: any) => {
-        gsap.to(e.currentTarget.children, {duration: 0.1, opacity: 1, ease: 'ease-out', y: 0})
-        gsap.to(e.currentTarget.children[2], {duration: 0.1, opacity: 0, ease: 'ease-out'})
+        gsap.to(e.currentTarget, {duration: 0.2, scale: 1, ease: 'ease-out'})
+        gsap.to(e.currentTarget.children, {duration: 0.2, opacity: 1, ease: 'ease-out', y: 0})
+        gsap.to(e.currentTarget.children[2], {duration: 0.2, opacity: 0, ease: 'ease-out'})
 
     }
     return (
