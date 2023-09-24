@@ -61,5 +61,44 @@
         font-family: 'Poppins', sans-serif;
     }
 
+    .detailsButton {
+        margin-top: 5vh;
+        display: flex;
+        justify-content: center;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 200;
+        letter-spacing: 0.2rem;
+
+    }
+
+    .contactUs {
+        margin-top: 10vh;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .down {
+
+        font-size: 2rem;
+        text-align: center;
+        transition: all 300ms linear;
+        max-width: max-content;
+        margin: auto;
+    }
+
+    .down:hover {
+        cursor: pointer;
+        padding: 0.5rem;
+        transition: all 200ms linear;
+    }
+
+    .location {
+
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        margin: 4rem auto;
+        max-width: 800px;
+    }
 }
 

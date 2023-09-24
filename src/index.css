@@ -15,5 +15,27 @@
     color: white;
     --icon: #5cccc9;
     --cat-border: rgba(103, 222, 216, 0.69);
+    scroll-behavior: smooth;
+}
 
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #10303F #050A0E;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+    background-image: linear-gradient(to bottom, #10303F, #091B25, #050A0E);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #499e9b;
+    border-radius: 10px;
+    border: 0 dotted #000000;
 }
