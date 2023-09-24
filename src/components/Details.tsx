@@ -16,7 +16,7 @@ const Details = () => {
         </div>
         <div className="register"><RegisterButton/></div>
         <div className="eventDetails">
-            <div className="contactUs"><h1>Contact Us</h1>
+            <div className="contactUs"><h1 className={'contactUsText'}>Contact Us</h1>
 
                 <div className="subContact" id={'contacts'}>
                     <h3>| Hassan Shahid: 0321-8890981 |</h3>
