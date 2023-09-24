@@ -16,9 +16,9 @@ const Details = () => {
             <div className="contactUs"><h1>Contact Us</h1>
 
                 <div className="subContact" id={'contacts'}>
-                    <h3>Hassan Shahid: 0321-8890981</h3>
+                    <h3>Hassan Shahid: 0321-8890981 |</h3>
                     <h3>Hammad Hussain: 0320-7819831</h3>
-                    <h3>Umar Raza: 0323-4468228</h3>
+                    <h3>| Umar Raza: 0323-4468228</h3>
                 </div>
             </div>
             <h3 className={'location'}>Pak-Turk Maarif International Schools and Colleges Lahore Boys Campus, Raiwind

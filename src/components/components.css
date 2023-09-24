@@ -76,15 +76,22 @@
         margin-left: 10rem;
         margin-right: 10rem;
         font-family: 'Poppins', sans-serif;
+        text-align: center;
+    }
+
+    .subContact {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
     }
 
     .down {
-
         font-size: 2rem;
         text-align: center;
         transition: all 300ms linear;
         max-width: max-content;
         margin: auto;
+        height: 45px;
     }
 
     .down:hover {
