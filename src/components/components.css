@@ -186,16 +186,22 @@
 }
 
 @media screen and (max-width: 768px) {
+    .categories {
+        margin-top: 1rem;
+    }
+
     .navImage {
-        height: 120px;
+        height: 50px;
         z-index: -1;
         user-select: none;
+        margin: auto;
+
     }
 
     .navbar {
+        margin-top: 4rem;
         display: flex;
         justify-content: center;
-        margin-top: 8vh;
     }
 
     .text1, .text2 {
@@ -203,46 +209,53 @@
         letter-spacing: 0.3rem;
         font-family: 'Orbitron', sans-serif;
         font-weight: 500;
-        font-size: 3.7rem;
+        font-size: 2rem;
+        text-align: center;
 
     }
 
-    .text1 {
-        writing-mode: vertical-rl;
-        transform: rotate(180deg);
-        transform-origin: center;
-    }
 
     .text2 {
-        writing-mode: vertical-rl;
+        writing-mode: horizontal-tb;
+        transform: ScaleY(-1);
     }
 
-    .categories {
-        display: flex;
-        justify-content: center;
-        margin-top: 10vh;
-    }
 
     .subCat {
         display: flex;
         flex-wrap: wrap;
-        gap: 4rem;
+        column-gap: 1.2rem;
+        row-gap: 1rem;
         justify-content: center;
+        text-align: center;
 
     }
 
-    .icon {
+    .contactUs {
+        text-align: center;
+        font-weight: 200;
+        font-family: 'Poppins', sans-serif;
+    }
 
+    .contactUs h1 {
+        text-align: center;
+        font-weight: 200;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .icon {
         border-radius: 2rem;
         border: 1px solid var(--cat-border);
         width: calc(17% - 1rem);
-        padding-top: 0.6rem;
-        font-size: 6rem;
+        padding: 1.8rem;
+        font-size: 2rem;
+        max-width: max-content;
+        max-height: max-content;
         text-align: center;
     }
 
     .labelText {
-        font-size: 1.2rem;
+        font-size: 0.75rem;
         font-weight: 400;
         text-align: center;
         font-family: 'Poppins', sans-serif;
@@ -258,18 +271,20 @@
 
     }
 
-    .contactUs {
-        margin-top: 10vh;
-        margin-left: 10rem;
-        margin-right: 10rem;
-        font-family: 'Poppins', sans-serif;
-        text-align: center;
-    }
 
     .subContact {
         display: flex;
         justify-content: center;
         gap: 2rem;
+        font-size: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .subContact h3 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 200;
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
     }
 
     .down {
@@ -277,7 +292,7 @@
         text-align: center;
         transition: all 300ms linear;
         max-width: max-content;
-        margin: 2rem auto;
+        margin: -2rem auto;
 
     }
 
@@ -288,10 +303,89 @@
     }
 
     .location {
-
+        font-size: 1.2rem;
         font-family: 'Poppins', sans-serif;
         text-align: center;
+        padding: 1rem;
+        line-height: 2rem;
+        font-weight: 300;
+        letter-spacing: 0.12rem;
         margin: 4rem auto;
-        max-width: 800px;
+        max-width: 540px;
+    }
+
+    button {
+
+        font-size: 1rem;
+        border: none;
+        background: transparent;
+        border-radius: 0.5rem;
+        padding: 10px 20px;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 0.2rem;
+        font-weight: 200;
+
+    }
+
+    .register {
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+
+    button:hover {
+        background: #091B25;
+        mix-blend-mode: lighten;
+
+    }
+
+    .btn-two {
+        color: #FFF;
+        transition: all 0.5s;
+        position: relative;
+    }
+
+    .btn-two span {
+        z-index: 2;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .btn-two::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transition: all 0.5s;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .btn-two::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transition: all 0.5s;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .btn-two:hover::before {
+        transform: rotate(-45deg);
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .btn-two:hover::after {
+        transform: rotate(45deg);
+        background-color: rgba(255, 255, 255, 0);
     }
 }
