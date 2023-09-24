@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&family=Poppins:wght@100;200;300;400&display=swap');
+
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     background-image: linear-gradient(to bottom, #10303F, #091B25, #050A0E);
-    height: 100vh;
+    min-height: 100vh;
     background-repeat: no-repeat;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
+
+    --cat-text: #499E9B;
+    color: white;
+    --icon: #5cccc9;
+    --cat-border: rgba(103, 222, 216, 0.69);
+
 }
