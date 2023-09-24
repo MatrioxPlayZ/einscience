@@ -3,7 +3,7 @@
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     background-image: linear-gradient(to bottom, #10303F, #091B25, #050A0E);
-    min-height: 100vh;
+  
     background-repeat: no-repeat;
     font-synthesis: none;
     text-rendering: optimizeLegibility;

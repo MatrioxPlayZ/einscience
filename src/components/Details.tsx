@@ -1,4 +1,5 @@
 import IconDown from "./icons/DownArrow.tsx";
+import RegisterButton from "./RegisterButton.tsx";
 
 const Details = () => {
 
@@ -12,6 +13,7 @@ const Details = () => {
                 }
             }}><IconDown/></div>
         </div>
+        <div className="register"><RegisterButton/></div>
         <div className="eventDetails">
             <div className="contactUs"><h1>Contact Us</h1>
 

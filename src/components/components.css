@@ -90,8 +90,195 @@
         text-align: center;
         transition: all 300ms linear;
         max-width: max-content;
-        margin: auto;
-        height: 45px;
+        margin: 2rem auto;
+
+    }
+
+    .down:hover {
+        cursor: pointer;
+        padding: 0.5rem;
+        transition: all 200ms linear;
+    }
+
+    .location {
+
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        margin: 4rem auto;
+        max-width: 800px;
+    }
+
+    .register {
+        display: flex;
+        justify-content: center;
+        margin-top: 10vh;
+    }
+
+    button {
+
+
+        font-size: 2rem;
+        border: none;
+        background: transparent;
+        border-radius: 0.5rem;
+        padding: 10px 20px;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 0.2rem;
+        font-weight: 200;
+    }
+
+    button:hover {
+        background: #091B25;
+        mix-blend-mode: lighten;
+        cursor: pointer;
+    }
+
+    .btn-two {
+        color: #FFF;
+        transition: all 0.5s;
+        position: relative;
+    }
+
+    .btn-two span {
+        z-index: 2;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .btn-two::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transition: all 0.5s;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .btn-two::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        transition: all 0.5s;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .btn-two:hover::before {
+        transform: rotate(-45deg);
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .btn-two:hover::after {
+        transform: rotate(45deg);
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .navImage {
+        height: 120px;
+        z-index: -1;
+        user-select: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        margin-top: 8vh;
+    }
+
+    .text1, .text2 {
+        color: var(--cat-text);
+        letter-spacing: 0.3rem;
+        font-family: 'Orbitron', sans-serif;
+        font-weight: 500;
+        font-size: 3.7rem;
+
+    }
+
+    .text1 {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        transform-origin: center;
+    }
+
+    .text2 {
+        writing-mode: vertical-rl;
+    }
+
+    .categories {
+        display: flex;
+        justify-content: center;
+        margin-top: 10vh;
+    }
+
+    .subCat {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4rem;
+        justify-content: center;
+
+    }
+
+    .icon {
+
+        border-radius: 2rem;
+        border: 1px solid var(--cat-border);
+        width: calc(17% - 1rem);
+        padding-top: 0.6rem;
+        font-size: 6rem;
+        text-align: center;
+    }
+
+    .labelText {
+        font-size: 1.2rem;
+        font-weight: 400;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .detailsButton {
+        margin-top: 5vh;
+        display: flex;
+        justify-content: center;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 200;
+        letter-spacing: 0.2rem;
+
+    }
+
+    .contactUs {
+        margin-top: 10vh;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+    }
+
+    .subContact {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .down {
+        font-size: 2rem;
+        text-align: center;
+        transition: all 300ms linear;
+        max-width: max-content;
+        margin: 2rem auto;
+
     }
 
     .down:hover {
@@ -108,4 +295,3 @@
         max-width: 800px;
     }
 }
-
