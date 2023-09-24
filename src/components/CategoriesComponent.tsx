@@ -88,6 +88,7 @@ const CategoriesComponent = () => {
                 </div>
                 <h1 className="text2">CATEGORIES</h1>
             </div>
+            <header><h1>20 | 21 | 22 October 2023</h1></header>
         </>
     )
 }
