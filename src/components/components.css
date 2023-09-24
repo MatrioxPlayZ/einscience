@@ -1,10 +1,11 @@
 @media screen and (min-width: 768px) {
     header h1 {
-        font-size: 1.5rem;
-        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+        font-family: 'Orbitron', sans-serif;
         font-weight: 200;
         letter-spacing: 0.2rem;
         text-align: center;
+
     }
     .shortDesc {
         position: absolute;
@@ -81,7 +82,7 @@
     }
 
     .detailsButton {
-        margin-top: 5vh;
+        margin-top: 3vh;
         display: flex;
         justify-content: center;
         font-family: 'Poppins', sans-serif;
@@ -209,7 +210,7 @@
 @media screen and (max-width: 768px) {
     header h1 {
         font-size: 1rem;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Orbitron', sans-serif;
         font-weight: 200;
         letter-spacing: 0.2rem;
         text-align: center;
