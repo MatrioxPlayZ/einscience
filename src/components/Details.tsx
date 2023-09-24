@@ -1,5 +1,6 @@
 import IconDown from "./icons/DownArrow.tsx";
 import RegisterButton from "./RegisterButton.tsx";
+import DarkThemedMap from "./MapComponent.tsx";
 
 const Details = () => {
 
@@ -28,6 +29,8 @@ const Details = () => {
                 Road, Block D OPF Housing
                 Scheme, Lahore, Punjab, Pakistan, 54000</h3>
         </div>
+       <DarkThemedMap/>
+
     </>
 }
 export default Details

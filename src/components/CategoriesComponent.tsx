@@ -4,7 +4,7 @@ import IconCashStack from "./icons/MaarifTank.tsx";
 import IconCode from "./icons/Hackathon.tsx";
 import IconHeadLightbulb from "./icons/Trova.tsx";
 import IconLocationPinAlt from "./icons/Scavenger.tsx";
-import IconRobot from "./icons/Robot.tsx";
+import IconRobot from "./icons/Robot.tsx";``
 import IconMasksTheater from "./icons/Syrup.tsx";
 import {gsap} from "gsap";
 
