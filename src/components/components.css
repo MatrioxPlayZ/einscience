@@ -1,4 +1,16 @@
 @media screen and (min-width: 768px) {
+    .shortDesc {
+        position: absolute;
+        top: 0;
+        font-size: 1rem;
+        left: 0;
+        opacity: 0;
+        padding: 10px;
+        z-index: -1;
+        font-family: 'Poppins', sans-serif;
+
+    }
+
     .navImage {
         height: 120px;
         z-index: -1;
@@ -8,7 +20,7 @@
     .navbar {
         display: flex;
         justify-content: center;
-        margin-top: 8vh;
+        margin-top: 6vh;
     }
 
     .text1, .text2 {
@@ -45,7 +57,7 @@
     }
 
     .icon {
-
+        position: relative;
         border-radius: 2rem;
         border: 1px solid var(--cat-border);
         width: calc(17% - 1rem);
@@ -73,8 +85,8 @@
 
     .contactUs {
         margin-top: 10vh;
-        margin-left: 10rem;
-        margin-right: 10rem;
+        margin-left: 8rem;
+        margin-right: 8rem;
         font-family: 'Poppins', sans-serif;
         text-align: center;
     }
@@ -83,6 +95,7 @@
         display: flex;
         justify-content: center;
         gap: 2rem;
+        flex-wrap: nowrap;
     }
 
     .down {
@@ -183,9 +196,11 @@
         background-color: rgba(255, 255, 255, 0);
     }
 
+
 }
 
 @media screen and (max-width: 768px) {
+
     .categories {
         margin-top: 1rem;
     }
@@ -252,7 +267,9 @@
         max-width: max-content;
         max-height: max-content;
         text-align: center;
+        position: relative;
     }
+
 
     .labelText {
         font-size: 0.75rem;
@@ -387,5 +404,16 @@
     .btn-two:hover::after {
         transform: rotate(45deg);
         background-color: rgba(255, 255, 255, 0);
+    }
+
+    .shortDesc {
+        position: absolute;
+        top: 0;
+        font-size: 0.7rem;
+        left: 0;
+        opacity: 0;
+        padding: 10px;
+        z-index: -1;
+        font-family: 'Poppins', sans-serif;
     }
 }
