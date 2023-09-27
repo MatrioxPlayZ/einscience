@@ -30,7 +30,6 @@ const Details = () => {
                 Scheme, Lahore, Punjab, Pakistan, 54000</h3>
         </div>
         <DarkThemedMap/>
-
     </>
 }
 export default Details
