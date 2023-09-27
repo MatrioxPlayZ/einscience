@@ -357,8 +357,8 @@ const CategoriesComponent: React.FC = () => {
                 </div>
                 <h1 className="text2">CATEGORIES</h1>
             </div>
-            <h1 id={'desc'} className={'detailsButton underline-animation'} onClick={handleClick}>EVENT DETAILS</h1>
             <header><h1>20 | 21 | 22 October 2023</h1></header>
+            <h1 id={'desc'} className={'detailsButton underline-animation'} onClick={handleClick}>EVENT DETAILS</h1>
             {modalVisible && (
                 <DescriptionsComponent id={selectedId} onClose={handleCloseModal}/>
             )}
