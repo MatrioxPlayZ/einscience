@@ -222,6 +222,18 @@ const descComponent = () => {
     )
 }
 const DescriptionsComponent: React.FC<DescriptionsComponentProps> = ({id, onClose}) => {
+    useEffect(() => {
+        gsap.to('.modal', {duration: 0, opacity: 0, ease: 'ease-out'});
+        gsap.to('.modal', {
+            duration: 0.2,
+            opacity: 1,
+            delay: 0.1,
+            y: 0,
+            backgroundColor: 'rgba(0, 0, 0, 0.643)',
+
+        });
+        gsap.to('.modal-content', {delay: 0, y: 0, ease: 'ease-out', x: 0, duration: 0.2});
+    }, []);
     const descriptions = {
         robotics: roboticsComponent(),
         math: mathComponent(),
@@ -238,10 +250,8 @@ const DescriptionsComponent: React.FC<DescriptionsComponentProps> = ({id, onClos
     const componentToRender = descriptions[id] || null;
 
     useEffect(() => {
-        // Add the class to disable overflow when the modal is active
         document.body.classList.add('disable-overflow');
 
-        // Remove the class when the modal is closed
         return () => {
             document.body.classList.remove('disable-overflow');
         };
