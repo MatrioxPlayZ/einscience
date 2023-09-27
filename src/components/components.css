@@ -459,8 +459,13 @@
         justify-content: center;
         font-family: 'Poppins', sans-serif;
         font-weight: 200;
+        font-size: 2rem;
+        margin-bottom: 3rem;
         letter-spacing: 0.2rem;
-
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        text-decoration-thickness: 2px;
+        cursor: pointer;
     }
 
 
