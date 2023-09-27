@@ -250,8 +250,9 @@ const DescriptionsComponent: React.FC<DescriptionsComponentProps> = ({id, onClos
     const componentToRender = descriptions[id] || null;
 
     useEffect(() => {
-        document.body.classList.add('disable-overflow');
-
+        setTimeout(() => {
+            document.body.classList.add('disable-overflow');
+        }, 200);
         return () => {
             document.body.classList.remove('disable-overflow');
         };
