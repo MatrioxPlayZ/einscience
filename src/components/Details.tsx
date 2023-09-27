@@ -6,7 +6,7 @@ const Details = () => {
 
 
     return <>
-        <div className="styleBlock"><h1 className={'detailsButton underline-animation'}>EVENT DETAILS</h1>
+        <div className="styleBlock">
             <div className="down" onClick={() => {
                 const contactsSection = document.querySelector('#contacts');
                 if (contactsSection) {
@@ -29,7 +29,7 @@ const Details = () => {
                 Road, Block D OPF Housing
                 Scheme, Lahore, Punjab, Pakistan, 54000</h3>
         </div>
-       <DarkThemedMap/>
+        <DarkThemedMap/>
 
     </>
 }

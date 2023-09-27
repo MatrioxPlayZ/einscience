@@ -6,8 +6,8 @@ import IconHeadLightbulb from "./icons/Trova.tsx";
 import IconLocationPinAlt from "./icons/Scavenger.tsx";
 import IconRobot from "./icons/Robot.tsx";
 import IconMasksTheater from "./icons/Syrup.tsx";
-import {gsap} from "gsap";
 import {useState, useEffect} from "react";
+import {gsap} from "gsap";
 
 type DescriptionsComponentProps = {
     id: string;
@@ -15,7 +15,7 @@ type DescriptionsComponentProps = {
 };
 
 const roboticsComponent = () => {
-    return <>Component 1</>
+    return <>Robotics Component</>
 }
 const mathComponent = () => {
     return (
@@ -196,7 +196,31 @@ const tankComponent = () => {
 
         </>)
 }
+const descComponent = () => {
+    return (
+        <>
+            <h1 className={'mathCat'}>Event Description</h1>
+            <section className="einscienceSection">
+                <p>The very crevices of science are awoken. Atoms, molecules, and subatomic particles are jubilating
+                    with excitement. The laws of physics become legislation. Chemical bonds are the only bonds known,
+                    and biological fact is common knowledge. The most scientifically oriented occasion to ever grace
+                    this city has finally returned from its ever-anticipated slumber. A séance. A ritual. An
+                    awe-inspiring display of expertise and precision. Welcome to Einscience!</p>
 
+                <p>Here, science is expanded beyond the boundaries of natural experiment and limited testing; oh no,
+                    here branches of study are coupled with innovation, creativity, passion, diplomacy, and rigor. The
+                    most ambitious instance of diverse fields being brought together to make each other even more
+                    enjoyable. With a vast plethora of options to indulge, Einscience not only entertains the nerd in
+                    you but the curiously enthusiastic creatures we all have so recklessly procured within
+                    ourselves.</p>
+
+                <p>At Einscience, participants will be presented with 8 different categories to participate in. Each
+                    category containing an equal level of intrigue and anonymity!</p>
+            </section>
+
+        </>
+    )
+}
 const DescriptionsComponent: React.FC<DescriptionsComponentProps> = ({id, onClose}) => {
     const descriptions = {
         robotics: roboticsComponent(),
@@ -207,6 +231,7 @@ const DescriptionsComponent: React.FC<DescriptionsComponentProps> = ({id, onClos
         hack: hackComponent(),
         hunt: huntComponent(),
         tank: tankComponent(),
+        desc: descComponent(),
     };
 
     // @ts-ignore
@@ -332,6 +357,7 @@ const CategoriesComponent: React.FC = () => {
                 </div>
                 <h1 className="text2">CATEGORIES</h1>
             </div>
+            <h1 id={'desc'} className={'detailsButton underline-animation'} onClick={handleClick}>EVENT DETAILS</h1>
             <header><h1>20 | 21 | 22 October 2023</h1></header>
             {modalVisible && (
                 <DescriptionsComponent id={selectedId} onClose={handleCloseModal}/>
