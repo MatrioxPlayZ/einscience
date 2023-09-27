@@ -158,7 +158,7 @@ const huntComponent = () => {
                     science enthusiasts shine. With the most complex clues, only the most knowledgeable and astute among
                     you will successfully uncover the hidden treasures.</p>
 
-                <h2>Round 4</h2>
+                <h2>Round 4 - The Finale</h2>
                 <p>Finally, participants will be challenged to take upon science as a personality! The scavenger clues
                     can range from autobiographies of scientific personnel to answering questions on which space movie
                     was a box office hit in the 10s. Here, pop culture and science have an unlikely interaction.</p>
