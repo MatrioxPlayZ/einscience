@@ -15,7 +15,19 @@ type DescriptionsComponentProps = {
 };
 
 const roboticsComponent = () => {
-    return <>Robotics Component</>
+    return (
+        <>
+            <h1 className={'mathCat'}>Robotics!</h1>
+            <section className="roboticsSection catSection">
+                <p>Robots, cars, and races are basically everyone's dream job. So we at Einscience have decided to give
+                    you guys a taste of it!</p>
+                <p>Participants will be tasked with constructing a robot articulated vehicle. But that's not all; your
+                    invention will be put to the test through a series of obstacles and races.</p>
+                <p>In this category, your resilience and versatility will be challenged indefinitely! So let's see, do
+                    you have what it takes to take on this contest?</p>
+            </section>
+        </>
+    )
 }
 const mathComponent = () => {
     return (
