@@ -25,7 +25,7 @@
         align-items: center;
         z-index: 1000;
         scrollbar-gutter: auto;
-
+        backdrop-filter: blur(8px);
     }
 
     .catSection {
@@ -45,7 +45,8 @@
     }
 
     .modal-content {
-        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(8px);
+        background: rgba(0, 0, 0, 0.3);
         box-shadow: 0 1px 20px 2px var(--icon);
         text-align: center;
         max-width: 75%;
@@ -325,11 +326,13 @@
         justify-content: center;
         align-items: center;
         z-index: 1000;
-
+        backdrop-filter: blur(8px);
     }
 
     .modal-content {
-        background: rgba(0, 0, 0, 0.35);
+        backdrop-filter: blur(8px);
+        background: rgba(0, 0, 0, 0.3);
+
         box-shadow: 0 1px 20px 2px var(--icon);
         text-align: center;
         max-width: 90%;
