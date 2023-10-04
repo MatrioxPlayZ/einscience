@@ -3,7 +3,7 @@
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1001px) {
     header h1 {
         font-size: 2rem;
         font-family: 'Orbitron', sans-serif;
@@ -310,7 +310,7 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .disable-overflow {
         overflow: hidden;
     }
