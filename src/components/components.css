@@ -333,7 +333,7 @@
 
     .modal-content {
         backdrop-filter: blur(8px);
-        background: rgba(0, 0, 0, 0.3);
+        background: radial-gradient(circle at top, rgba(124, 151, 148, 0.5),rgba(86, 110, 108, 0.3) );
 
         box-shadow: 0 1px 20px 2px var(--icon);
         text-align: center;
@@ -358,7 +358,8 @@
 
     .modal-content section {
         font-size: 1rem;
-        font-weight: 200;
+        font-weight: 300;
+        line-height: 1.7;
         font-family: 'Poppins', sans-serif;
     }
 
