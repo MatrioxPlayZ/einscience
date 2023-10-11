@@ -4,6 +4,13 @@
 
 
 @media screen and (min-width: 1001px) {
+    .iframeLink {
+        padding: 2rem 4rem;
+    }
+    iframe {
+        border-radius: 0.25rem;
+        filter: invert(100%);
+    }
     header h1 {
         font-size: 2rem;
         font-family: 'Orbitron', sans-serif;
@@ -614,5 +621,12 @@
         letter-spacing: 0.1rem;
         font-weight: 300;
         font-family: 'Poppins', sans-serif;
+    }
+    .iframeLink {
+        padding: 0.25rem 0.5rem;
+    }
+    iframe {
+        border-radius: 0.25rem;
+        filter: invert(100%);
     }
 }
