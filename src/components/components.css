@@ -46,7 +46,7 @@
 
     .modal-content {
         backdrop-filter: blur(8px);
-        background: rgba(0, 0, 0, 0.3);
+        background: rgba(134, 164, 161, 0.2);
         box-shadow: 0 1px 20px 2px var(--icon);
         text-align: center;
         max-width: 75%;
@@ -71,6 +71,7 @@
         max-height: max-content;
         font-size: 2rem;
         position: absolute;
+        color: white;
         top: 0;
         left: 0;
         margin-left: 0.5rem;
